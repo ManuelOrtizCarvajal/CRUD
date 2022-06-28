@@ -8,7 +8,7 @@
 
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "SELECT * FROM tm_producto WHERE est=1";
+            $sql = "SELECT * FROM tm_producto WHERE estado=1";
             $sql = $conectar->prepare($sql);
             $sql->execute();
             return $resultado = $sql->fetchAll();
@@ -35,7 +35,7 @@
             parent::set_names();
             $sql = "UPDATE tm_producto 
                     SET  
-                        est=0,
+                        estado=0,
                         fech_elim=now()
                     WHERE 
                         prod_id = ?";

@@ -676,19 +676,32 @@
     <div class="br-mainpanel">
       <div class="br-pageheader pd-y-15 pd-l-20">
         <nav class="breadcrumb pd-0 mg-0 tx-12">
-          <a class="breadcrumb-item" href="index.html">Bracket</a>
-          <span class="breadcrumb-item active">Blank Page</span>
+          <a class="breadcrumb-item" href="index.html">Mantenimiento</a>
+          <span class="breadcrumb-item active">Producto</span>
         </nav>
       </div><!-- br-pageheader -->
       <div class="pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
-        <h4 class="tx-gray-800 mg-b-5">Blank Page (Default Layout)</h4>
-        <p class="mg-b-0">Introducing Bracket admin template, the most handsome admin template of all time.</p>
+        <h4 class="tx-gray-800 mg-b-5">Producto</h4>
+        <p class="mg-b-0">Desde esta ventana podr&aacute; dar mantenimiento a productos</p>
       </div>
 
-      <div class="br-pagebody">
-
-        <!-- start you own content here -->
-
+      <div class="br-pagebody">      
+        <div class="br-section-wrapper">
+          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Mantenimiento de Producto</h6>
+          <div class="table-wrapper">
+            <table id="productos_data" class="table display responsive nowrap">
+              <thead>
+                <tr>
+                  <th class="wd-15p">Nombre</th>
+                  <th class="wd-15p"></th>
+                  <th class="wd-20p"></th>                  
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>    
       </div><!-- br-pagebody -->
 
     </div><!-- br-mainpanel -->
@@ -702,7 +715,15 @@
     <script src="../../public/lib/jquery-ui/jquery-ui.js"></script>
     <script src="../../public/lib/jquery-switchbutton/jquery.switchButton.js"></script>
     <script src="../../public/lib/peity/jquery.peity.js"></script>
-
     <script src="../../public/js/bracket.js"></script>
+
+    <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
+    <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="../../public/datatables/dataTables.buttons.min.js"></script>
+    <script src="../../public/datatables/buttons.html5.min.js"></script>
+    <script src="../../public/datatables/buttons.colVis.min.js"></script>
+    <script src="../../public/datatables/jszip.min.js"></script>
+
+    <script type="text/javascript" src="mntproducto.js"></script>
   </body>
 </html>

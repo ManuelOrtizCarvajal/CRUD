@@ -1,7 +1,7 @@
 <?php
 
     require_once("../config/conexion.php");
-    require_once("../model/Producto.php");
+    require_once("../model/Productos.php");
 
     $producto = new Producto();
 
