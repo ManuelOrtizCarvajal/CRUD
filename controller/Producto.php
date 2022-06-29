@@ -9,7 +9,7 @@
     {
 
         case "listar":
-             $datos=$producto->get_producto();
+             $datos = $producto->get_producto();
              $data = Array();
              foreach($datos as $row)
              {
@@ -29,6 +29,53 @@
                                 "aaData"=>$data
                             );
             echo json_encode($results);
+
+            break;
+
+        case "guardaryeditar":
+            $datos = $producto->get_producto_id($_POST["prod_id"]);
+            if(empty($_POST["prod_id"]))
+            {
+
+                if(is_array($datos) and count($datos)== 0)
+                {
+
+                    $producto->insert_producto($_POST["prod_nom"]);
+
+                }
+
+            }
+            else
+            {
+
+                $producto->update_producto($_POST["prod_id"], $_POST["prod_nom"]);
+
+            }
+
+            break;
+
+        case "mostrar":
+
+            $datos = $producto->get_producto_id($_POST["prod_id"]);
+
+            if(is_array($datos) and count($datos)>0)
+            {
+
+                foreach($datos as $row)
+                {
+
+                    $output["prod_id"] = $row["prod_id"];
+                    $output["prod_nom"] = $row["prod_nom"];
+
+                }
+
+            }
+
+            break;
+
+        case "eliminar":
+
+            $producto->del_producto($_POST["prod_id"]);
 
             break;
 

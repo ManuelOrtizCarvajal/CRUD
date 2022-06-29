@@ -79,6 +79,29 @@ $(document).ready(function()
 
     }).DataTable();
 
+   
+
+});
+
+function editar()
+{
+
+
+}
+
+function eliminar(prod_id)
+{
+
+    console.log(prod_id);
+
+}
+
+$(document).on("click","#btnNuevo", function()
+{
+
+    $("#mdlTitulo").html("Nuevo Registro");
+    $("#modalMantenimiento").modal('show');
+
 });
 
 init();
