@@ -43,7 +43,7 @@ $(document).ready(function()
         "bInfo": true,
         "iDisplayLength": 20,
         "order": [[0, "asc"]],
-        "languaje":
+        "language":
         {
 
             "sProcessing": "Procesando...",
@@ -58,7 +58,7 @@ $(document).ready(function()
             "sUrl": "",
             "sInfoThousands": ",",
             "sLoadingRecords": "Cargando...",
-            "onPaginate":
+            "oPaginate":
             {
 
                 "sFirst": "Primero",

@@ -20,7 +20,7 @@
 
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "SELECT * FROM tm_producto WHERE prod_id = ?";
+            $sql = "SELECT * FROM tm_producto WHERE prod_id=?";
             $sql = $conectar->prepare($sql);
             $sql->bindValue(1,$prod_id);
             $sql->execute();
@@ -67,7 +67,7 @@
             $sql = "UPDATE tm_producto 
             SET  
                 prod_nom = ?,
-                fech_modi = now()
+                fech_modi =now()
             WHERE 
                 prod_id = ?";
             $sql = $conectar->prepare($sql);
