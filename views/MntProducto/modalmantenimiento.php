@@ -9,7 +9,7 @@
                     <input type="hidden" id="prod_id" name="prod_id">
                     <div class="form-group">
                         <label class="form-label" for="prod_nom">Nombre</label>
-                        <input type="text" class="form-control" id="prod_nom" name="aprod_nom" placeholder="Ingrese Nombre" required>
+                        <input type="text" class="form-control" id="prod_nom" name="prod_nom" placeholder="Ingrese Nombre" required>
                     </div>
                 </div>
                 <div class="modal-footer">
